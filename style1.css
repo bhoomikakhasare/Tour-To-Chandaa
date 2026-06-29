@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: black;
+    color: #333;
+    display:flex;
+    border: none;
+}
+.footer div{
+   text-align: center;
+}
+.col-2{
+   flex-grow: 2;
+}

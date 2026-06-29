@@ -1,0 +1,8 @@
+*.zip
+*.docx
+*.pdf
+*.pptx
+*.ppt
+*.tmp
+.DS_Store
+Thumbs.db

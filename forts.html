@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Forts</title>
+</head>
+
+<style>
+   /* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,  #f3ab40,
+    #ff5722);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.main{
+    flex:1;
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    align-content:center;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.image{
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+.card:hover .image img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title{
+    padding:20px 20px 10px;
+    text-align:center;
+}
+
+.title h1{
+    font-size:24px;
+    color:#111827;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.des{
+    padding:0 20px 25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+}
+
+.des p{
+    color:#64748b;
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+    text-align:center;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.des a{
+    margin-top:auto;
+}
+
+button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+    45deg,
+    #ff9800,
+    #ff5722);
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    opacity:0.95;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    .title h1{
+        font-size:20px;
+    }
+
+    .main{
+        width:95%;
+    }
+}
+</style>
+
+<body>
+   <header>
+		<h1>Forts in Chandrapur</h1>
+	</header>
+   <!--<center>
+      <h1 style="font-family: cursive; font-size: 30px; text-decoration: underline;">Forts in Chandrapur</h1>
+   </center>-->
+   <!--Manikgad fort-->
+   <div class="main">
+      <div class="card">
+
+         <div class="image">
+            <img src="manikgad.jpg" alt="manikgad_fort" >
+         </div>
+         <div class="title">
+            <h1>
+               Manikgarh Fort</h1>
+         </div>
+         <div class="des">
+            <p>
+Ancient hill fort located 507 meters above sea level,
+surrounded by forests and wildlife.
+</p>
+            <a href="manikgarhfort.html"><button>Read More...</button></a>
+         </div>
+      </div>
+
+      <!--Ballarpur Fort -->
+
+      <div class="card">
+
+         <div class="image">
+            <img src="Ballarpur_Fort.png" alt="Ballarpur_Fort" >
+         </div>
+         <div class="title">
+            <h1>
+               Ballarpur Fort</h1>
+         </div>
+         <div class="des">
+            <p>
+Historic fort situated on the banks of the Wardha River,
+built by Gond rulers.
+</p>
+            <a href="ballarpur.html"><button>Read More...</button></a>
+         </div>
+      </div>
+
+      <!--chandrapur fort -->
+
+
+      <div class="card">
+
+         <div class="image">
+            <img src="Chandrapur_fort.jpg" alt="Chandrapur_Fort">
+         </div>
+         <div class="title">
+            <h1>
+               Chandrapur Fort</h1>
+         </div>
+         <div class="des">
+            <p>
+A magnificent Gond-era fort that symbolizes the rich
+history of Chandrapur.
+</p>
+            <a href="chandrapurfort.html"><button>Read More...</button></a>
+         </div>
+      </div>
+
+      <!--bhadravati forts -->
+
+
+      <div class="card">
+
+         <div class="image">
+            <img src="bhadravati-fort.webp" alt="Bhadravati_Fort" >
+         </div>
+         <div class="title">
+            <h1>
+               Bhadravati Fort</h1>
+         </div>
+         <div class="des">
+            <p>
+Historic fort near Bhadravati showcasing the region's
+architectural heritage.
+</p>
+            <a href="bhadravatifort.html"><button>Read More...</button></a>
+         </div>
+      </div>
+   </div>
+   <footer>
+		<p>&copy; 2023 Chandrapur Forts</p>
+	</footer>
+</body>
+
+</html>

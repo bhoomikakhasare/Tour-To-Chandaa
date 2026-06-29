@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(8,15,35,0.88),
+        rgba(8,15,35,0.88)
+    ),
+    url("faq-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#fff;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+header p{
+    margin-top:15px;
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+
+header::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    margin:20px auto 0;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+/* MAIN */
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* CATEGORY TITLES */
+
+h2{
+    color:#00c6ff;
+    margin:40px 0 20px;
+    font-size:1.8rem;
+}
+
+/* FAQ CARD */
+
+.faq-item{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    transition:0.4s ease;
+}
+
+.faq-item:hover{
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.35);
+}
+
+/* QUESTION */
+
+.question{
+    font-size:1.2rem;
+    font-weight:600;
+    color:#ffffff;
+
+    margin-bottom:15px;
+
+    display:flex;
+    align-items:center;
+}
+
+.question::before{
+    content:"❓";
+    margin-right:12px;
+    font-size:1.3rem;
+}
+
+/* ANSWER */
+
+.answer{
+    color:#d6dbe4;
+    line-height:1.9;
+    font-size:1rem;
+    padding-left:38px;
+}
+
+/* LINKS */
+
+a{
+    color:#00c6ff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+a:hover{
+    color:#ffffff;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:25px;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(10px);
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00c6ff;
+    border-radius:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    .faq-item{
+        padding:20px;
+    }
+
+    .question{
+        font-size:1.05rem;
+    }
+
+    .answer{
+        padding-left:0;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Frequently Asked Questions</h1>
+    <p>Find answers to the most common travel and tourism questions.</p>
+</header>
+    <main>
+        <h2>General Questions</h2>
+        <div class="faq-item">
+            <div class="question">What are some common items savvy travelers bring with them?</div>
+            <div class="answer">Don’t forget a small power strip—ideal for sharing a crowded outlet in an airport, and a
+                simple way to keep all devices close by once at a hotel. Keep a photograph of your luggage and passport
+                on your smartphone; lose either of them, and you’ll be grateful for the reference.
+                Pack a scarf—always. And since calling Nespresso coffee is an insult to baristas everywhere, the best
+                in-room alternate is the Aeropress, a nifty gizmo that’s portable, light, and makes killer morning joe
+                almost anywhere.
+            </div>
+        </div>
+
+        <h2>Travel Questions</h2>
+        <div class="faq-item">
+            <div class="question">What documents do I need to travel internationally?</div>
+            <div class="answer">You will need a valid passport and potentially a visa, depending on the country you are
+                traveling to. Please check with the embassy or consulate of your destination country for more
+                information.
+            </div>
+        </div>
+        
+        <div class="faq-item">  
+            <div class="question">What should I pack for my trip?</div>
+            <div class="answer">This depends on your destination, travel dates, and personal preferences. We recommend
+                checking the weather forecast for your destination and packing accordingly. You may also want to
+                research the local culture and customs to ensure you pack appropriate clothing.</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

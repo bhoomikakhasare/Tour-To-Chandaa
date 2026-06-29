@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Website Terms and Conditions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(5,15,35,0.88),
+        rgba(5,15,35,0.88)
+    ),
+    url("terms-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#fff;
+    min-height:100vh;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+header::after{
+    content:"";
+    width:130px;
+    height:4px;
+    display:block;
+    margin:15px auto;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+/* MAIN CONTENT */
+
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* TERM CARDS */
+
+section{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:18px;
+
+    padding:25px;
+    margin-bottom:25px;
+
+    transition:0.4s ease;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.25);
+}
+
+section:hover{
+    transform:translateY(-8px);
+
+    background:rgba(255,255,255,0.12);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+
+p{
+    font-size:1.08rem;
+    line-height:1.9;
+    color:#e2e8f0;
+}
+
+/* NUMBER STYLE */
+
+section{
+    position:relative;
+    padding-left:90px;
+}
+
+section::before{
+    content:counter(terms);
+    counter-increment:terms;
+
+    position:absolute;
+    left:25px;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:45px;
+    height:45px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    font-weight:700;
+    font-size:1.1rem;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+main{
+    counter-reset:terms;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:rgba(0,0,0,0.35);
+
+    backdrop-filter:blur(10px);
+}
+
+footer p{
+    color:#cbd5e1;
+    font-size:0.95rem;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00c6ff;
+    border-radius:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    section{
+        padding:20px;
+        padding-top:65px;
+    }
+
+    section::before{
+        top:20px;
+        left:20px;
+        transform:none;
+    }
+
+    p{
+        font-size:1rem;
+    }
+    s
+    .subtitle{
+    margin-top:15px;
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+}
+    </style>
+</head>
+
+<body>
+    <header>
+    <h1>Terms & Conditions</h1>
+    <p class="subtitle">
+        Please read these terms carefully before using our travel services.
+    </p>
+</header>
+
+    <main>
+        <section>
+            <p>1.In this Website, we have made information available related to travel, tourism, care and any closely or
+                remotely, directly or indirectly related aspects covered or not covered under the scope of the our
+                works.</p>
+        </section>
+
+        <section>
+            <p>2.The website features contact details and might feature for soliciting enquiries.</p>
+        </section>
+
+        <section>
+            <p>3.The user of this website will not disseminate, post, transmit any information via this website or on
+                this
+                website. User will not disseminate, post, transmit any information via this website or on this website
+                which could be harmful, damaging, illegal, obscene, defamatory</p>
+        </section>
+
+        <section>
+            <p>4.User of this website will not deface, alter or interfere with the front end 'look and feel' of this
+                website.</p>
+        </section>
+
+        <section>
+            <p>5.the timeliness or reliability, availability, accuracy, complete-ness of any of the information, content
+                or data found on the website</p>
+        </section>
+
+        <section>
+            <p>6.User of this website will not use any software, routine or device to interfere or attempt to interfere
+                electronically or manually with the operations or functionalities of this website including but, not
+                limited to uploading or making available files containing corrupt data or viruses via whatever means</p>
+        </section>
+
+        <section>
+            <p>7.We could be featuring weblinks website for further checking the information referred / mentioned on / at it.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

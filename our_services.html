@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Services - Travel Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      /* General styling */
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(10,20,40,0.8),
+        rgba(10,20,40,0.8)
+    ),
+    url("services-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+header::after{
+    content:"";
+    display:block;
+    width:100px;
+    height:4px;
+    margin:10px auto;
+    border-radius:10px;
+    background:linear-gradient(to right,#00c6ff,#0072ff);
+}
+
+.services-list{
+    list-style:none;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.service{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:all 0.4s ease;
+    cursor:pointer;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.service::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+.service:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.35);
+}
+
+.service h2{
+    font-size:1.6rem;
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+.service p{
+    color:#d6e4f0;
+    line-height:1.8;
+    font-size:1rem;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    .service{
+        padding:25px;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <h1>Our Services</h1>
+      </header>
+      <ul class="services-list">
+        <li class="service">
+          <h2>🏨 Hotels</h2>
+          <p>Find the perfect accommodation for your trip, from luxury resorts to budget-friendly hostels.</p>
+        </li>
+        <li class="service">
+          <h2>🍽️ Restaurants</h2>
+          <p>You can find the Restaurants as per your Choice</p>
+        </li>
+        <li class="service">
+          <h2>🗺 Tours</h2>
+          <p>Explore popular tourist destinations with guided tours and activities.</p>
+        </li>
+        <li class="service">
+          <h2>🏛 District Information</h2>
+          <p>By reading Chandrapur district information you can explore it more.</p>
+        </li>
+        <li class="service">
+          <h2>🛍 Shopping</h2>
+          <p>We have mentioned about Chandrapur's famous shopping Places</p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

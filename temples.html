@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Temples</title>
+</head>
+
+<style type="text/css">
+  /* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#7c3aed,#4f46e5);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* =========================
+   CARD CONTAINER
+========================= */
+
+.main{
+    flex:1;
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    align-content:center;
+
+    padding:40px 0;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.image{
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.card:hover .image img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title{
+    padding:20px 20px 10px;
+    text-align:center;
+}
+
+.title h1{
+    font-size:24px;
+    color:#111827;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.des{
+    padding:0 20px 25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+}
+
+.des p{
+    color:#64748b;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.des a{
+    margin-top:auto;
+}
+
+button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+    45deg,
+    #7c3aed,
+    #4f46e5);
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    .title h1{
+        font-size:20px;
+    }
+
+    .main{
+        width:95%;
+    }
+}
+</style>
+
+<body>
+
+  <header>
+    <h1>Temples in Chandrapur</h1>
+  </header>
+    <div class="main">
+
+      <!--Mahakali Temple-->
+
+      <div class="card">
+
+        <div class="image">
+          <img src="mahakalitemp.jpeg" alt="mahakali_temple">
+        </div>
+        <div class="title">
+          <h1>
+            Mahakali Temple</h1>
+        </div>
+        <div class="des">
+          <p>
+One of Chandrapur's most famous temples and a major spiritual landmark.
+</p>
+          <a href="mahakalitemple.html"><button>Read More...</button></a>
+        </div>
+      </div>
+      <!--Jain Mandir-->
+
+
+      <div class="card">
+
+        <div class="image">
+          <img src="jain_mandir2.jpg" alt="jain_mandir">
+        </div>
+        <div class="title">
+          <h1>
+            Jain Temple</h1>
+        </div>
+        <div class="des">
+          <p>
+Historic Jain temple dedicated to Lord Parswanath in Bhadravati.
+</p>
+          <a href="jaintemple.html"><button>Read More...</button></a>
+        </div>
+      </div>
+      <!--Shiv Tekdi-->
+      <div class="card">
+
+        <div class="image">
+          <img src="shivtekdi.jpeg" alt="shiv_tekdi">
+        </div>
+        <div class="title">
+          <h1>
+            Shiv Tekdi</h1>
+        </div>
+        <div class="des">
+         <p>
+A peaceful hilltop temple attracting devotees and visitors alike.
+</p>
+          <a href="shivtekdi.html"><button>Read More...</button></a>
+        </div>
+      </div>
+      <!--Balaji Temple-->
+      <div class="card">
+
+        <div class="image">
+          <img src="bhadranag1.webp" alt="Bhadranagtemple">
+        </div>
+        <div class="title">
+          <h1>
+            Bhadranag Mandir</h1>
+        </div>
+        <div class="des">
+          <p>
+Ancient Shiva temple known for Mahashivratri and Nag Panchami celebrations.
+</p>
+          <a href="bhadranag.html"><button>Read More...</button></a>
+        </div>
+      </div>
+
+    </div>
+  </center>
+  <footer>
+    <p>&copy; 2023 Chandrapur Temples</p>
+  </footer>
+</body>
+
+</html>

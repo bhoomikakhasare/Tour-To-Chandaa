@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Of Chandrapur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+        rgba(5,15,35,0.85),
+        rgba(5,15,35,0.85)
+    ),
+    url("map-bg.webp");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
+}
+
+/* MAIN CONTAINER */
+
+.map-container{
+    width:100%;
+    max-width:1100px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.4);
+
+    text-align:center;
+}
+
+/* TITLE */
+
+h1{
+    font-size:3rem;
+    color:#ffffff;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.subtitle{
+    color:#d6dbe4;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.title-line{
+    width:120px;
+    height:4px;
+
+    margin:0 auto 30px;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+}
+
+/* MAP */
+
+iframe{
+    width:100%;
+    height:600px;
+
+    border:none;
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.35);
+
+    transition:0.4s ease;
+}
+
+iframe:hover{
+    transform:scale(1.01);
+}
+
+/* INFO BOX */
+
+.info-box{
+    margin-top:25px;
+
+    background:rgba(255,255,255,0.05);
+
+    padding:20px;
+
+    border-left:4px solid #00c6ff;
+
+    border-radius:12px;
+
+    text-align:left;
+}
+
+.info-box h3{
+    color:#00c6ff;
+    margin-bottom:10px;
+}
+
+.info-box p{
+    color:#d6dbe4;
+    line-height:1.8;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00c6ff;
+    border-radius:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .map-container{
+        padding:20px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    iframe{
+        height:450px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="map-container">
+
+    <h1>Map of Chandrapur</h1>
+
+    <div class="title-line"></div>
+
+    <p class="subtitle">
+        Explore Chandrapur district, discover nearby attractions,
+        and plan your journey with ease.
+    </p>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120000.32526241179!2d79.19313926651688!3d19.966074782763833!2m3!1f0!2f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd2d5d164adc333%3A0x440ae57d85f01b55!2sChandrapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1683214547880!5m2!1sen!2sin"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="info-box">
+        <h3>📍 About Chandrapur</h3>
+        <p>
+            Chandrapur is known for its rich cultural heritage,
+            historical landmarks, wildlife sanctuaries, and natural beauty.
+            Use the map above to explore destinations, routes, hotels,
+            restaurants, and tourist attractions across the district.
+        </p>
+    </div>
+
+</div>
+</body>
+
+</html>

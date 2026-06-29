@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lakes</title>
+</head>
+
+<style type="text/css">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,  #80dbf2,
+    hsl(192, 97%, 29%));
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.main{
+    flex:1;
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    align-content:center;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:0.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.image{
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+.card:hover .image img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title{
+    padding:20px 20px 10px;
+    text-align:center;
+}
+
+.title h1{
+    font-size:24px;
+    color:#111827;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.des{
+    padding:0 20px 25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+}
+
+.des p{
+    color:#64748b;
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+    text-align:center;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.des a{
+    margin-top:auto;
+}
+
+button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+    45deg,
+     #80dbf2,
+    hsl(192, 97%, 29%));
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    opacity:0.95;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    .title h1{
+        font-size:20px;
+    }
+
+    .main{
+        width:95%;
+    }
+}
+</style>
+
+<body>
+
+  <header>
+		<h1>Beautiful Lakes in Chandrapur</h1>
+	</header>
+
+  <div class="main">
+
+    <!--Ramala Lake-->
+
+    <div class="card">
+
+      <div class="image">
+        <img src="ramalalake.jpg" alt="Ramala_lake">
+      </div>
+      <div class="title">
+        <h1>
+          Ramala Lake</h1>
+      </div>
+      <div class="des">
+        <p>
+Ramala Lake is a historic lake in Chandrapur built during the Gond dynasty. It is known for its scenic beauty, peaceful atmosphere, and cultural significance.
+</p>
+        <a href="ramala.html"><button>Read More...</button></a>
+      </div>
+    </div>
+    <!--Junona Lake-->
+
+
+    <div class="card">
+
+      <div class="image">
+        <img src="junona_lake.webp" alt="junona_lake">
+      </div>
+      <div class="title">
+        <h1>
+          Junona Lake</h1>
+      </div>
+      <div class="des">
+        <p>
+Junona Lake is a serene waterbody located near Chandrapur city. It is a popular destination for nature lovers and bird watchers.
+</p>
+        <a href="junona.html"><button>Read More...</button></a>
+      </div>
+    </div>
+    <!--Ghodajhari Lake-->
+
+    <div class="card">
+
+      <div class="image">
+        <img src="ghodazari_lake.jpg" alt="ghodazari_lake">
+      </div>
+      <div class="title">
+        <h1>
+          Ghodajhari Lake</h1>
+      </div>
+      <div class="des">
+        <p>
+Ghodajhari Lake is a beautiful reservoir surrounded by lush greenery. It is famous for its picturesque views and tranquil environment.
+</p>
+        <a href="ghodajhari.html"><button>Read More...</button></a>
+      </div>
+    </div>
+    <!--Lohara Lake-->
+
+    <div class="card">
+
+      <div class="image">
+        <img src="loharalake.webp" alt="lohara_lake">
+      </div>
+      <div class="title">
+        <h1>
+          Lohara Lake</h1>
+      </div>
+      <div class="des">
+        <p>
+Lohara Lake is a peaceful tourist spot situated near Chandrapur. The lake offers scenic landscapes and is ideal for relaxation and photography.
+</p>
+        <a href="lohara.html"><button>Read More...</button></a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Chandrapur Lakes</p>
+  </footer>
+</body>
+
+</html>

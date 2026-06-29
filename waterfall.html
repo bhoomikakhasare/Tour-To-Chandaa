@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Waterfalls</title>
+</head>
+
+<style type="text/css">
+    /* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#0f766e,#14b8a6);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+header h1{
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/* =========================
+   CARD CONTAINER
+========================= */
+
+.main{
+    flex:1;
+
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    align-content:center;
+
+    padding:40px 0;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
+    height:100%;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.image{
+    overflow:hidden;
+}
+
+.image img{
+    width:100%;
+    height:220px;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.card:hover .image img{
+    transform:scale(1.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title{
+    padding:20px 20px 10px;
+    text-align:center;
+}
+
+.title h1{
+    font-size:24px;
+    color:#111827;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.des{
+    padding:0 20px 25px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+}
+
+.des p{
+    color:#64748b;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.des a{
+    margin-top:auto;
+}
+
+button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+    45deg,
+    #14b8a6,
+    #0f766e);
+
+    color:white;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:32px;
+    }
+
+    .title h1{
+        font-size:20px;
+    }
+
+    .main{
+        width:95%;
+    }
+}
+</style>
+
+<body>
+   <header>
+		<h1>Waterfalls in Chandrapur</h1>
+	</header>
+   
+
+   <div class="main">
+
+      <!--Muktai Waterfall-->
+
+      <div class="card">
+
+         <div class="image">
+            <img src="muktaifalls.jpg" alt="muktaifalls">
+         </div>
+         <div class="title">
+            <h1>
+               Muktai Waterfalls</h1>
+         </div>
+         <div class="des">
+            <p>
+A beautiful forest waterfall and one of the most popular natural attractions in Chandrapur.
+</p>
+            <a href="muktai.html"><button>Read More...</button></a>
+         </div>
+      </div>
+      <!--Somnath Waterfalls -->
+
+
+      <div class="card">
+
+         <div class="image">
+            <img src="somnathfalls1.jpg" alt="somnathfalls" >
+         </div>
+         <div class="title">
+            <h1>
+               Somnath Waterfalls</h1>
+         </div>
+         <div class="des">
+           <p>
+A scenic waterfall near Somnath, surrounded by nature and rural landscapes.
+</p>
+            <a href="somnath.html"><button>Read More...</button></a>
+         </div>
+      </div>
+      <!--Zari Waterfalls-->
+
+      <div class="card">
+
+         <div class="image">
+            <img src="zarifalls.jpg" alt="zarifalls">
+         </div>
+         <div class="title">
+            <h1>
+               Zari Waterfalls</h1>
+         </div>
+         <div class="des">
+            <p>
+A peaceful hidden waterfall near Chimur, perfect for nature lovers.
+</p>
+            <a href="zari.html"><button>Read More...</button></a>
+         </div>
+      </div>
+      <!--Ramdegi Waterfalls-->
+
+      <div class="card">
+
+         <div class="image">
+            <img src="ramdegifalls.jpg" alt="ramdegifalls">
+         </div>
+         <div class="title">
+            <h1>
+               Ramdegi Waterfalls</h1>
+         </div>
+         <div class="des">
+            <p>
+A serene waterfall near Ramdegi village, offering a refreshing natural escape.
+</p>
+            <a href="ramdegifalls.html"><button>Read More...</button></a>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <p>&copy; 2023 Chandrapur Waterfalls</p>
+   </footer>
+</body>
+</html>
